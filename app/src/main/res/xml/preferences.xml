@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:entries="@array/sound_list"
+        android:entryValues="@array/sound_list"
+        android:key="pref_soundOnOff"
+        android:title="@string/sound_on_off"
+        android:summary="@string/sound_on_off_description"
+        android:persistent="true"
+        android:defaultValue="TRUE" />
+
+    <ListPreference
+        android:entries="@array/guesses_list"
+        android:entryValues="@array/guesses_list"
+        android:key="pref_numberOfChoices"
+        android:title="@string/number_of_choices"
+        android:summary="@string/number_of_choices_description"
+        android:persistent="true"
+        android:defaultValue="4" />
+
+    <MultiSelectListPreference
+        android:entries="@array/regions_list_for_settings"
+        android:entryValues="@array/regions_list"
+        android:key="pref_regionsToInclude"
+        android:title="@string/usa_regions"
+        android:summary="@string/usa_regions_description"
+        android:persistent="true"
+        android:defaultValue="@array/regions_list" />
+
+</PreferenceScreen>
