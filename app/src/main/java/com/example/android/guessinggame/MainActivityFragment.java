@@ -311,7 +311,7 @@ public class MainActivityFragment extends Fragment {
                     alertDialog.setMessage(
                         getString(R.string.results,
                                 totalGuesses,
-                                ((STATES_IN_QUIZ * 1000) / (double) totalGuesses)));
+                                (1000 / (double) totalGuesses)));
                     // "Reset Quiz" Button
                     alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL,getString(R.string.reset_quiz),
                         new DialogInterface.OnClickListener() {
